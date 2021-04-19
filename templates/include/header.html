@@ -1,0 +1,120 @@
+{% load static %}
+<!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+
+    <!-- HEADER AREA START (header-4) -->
+    <header class="ltn_header-area ltnheader-4 ltnheader-6 ltn_header-transparent gradient-color-2">
+        <!-- ltn__header-top-area start -->
+        <div class="ltn__header-top-area top-area-color-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="ltn__top-bar-menu">
+                            <ul>
+                                <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> info@webmail.com</a></li>
+                                <li><a href="locations.html"><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="top-bar-right text-right">
+                            <div class="ltn__top-bar-menu">
+                                <ul>
+                                    
+                                    
+                                        <!-- ltn__social-media -->
+                                        <div class="ltn__social-media">
+                                            <ul>
+                                                {% if user.is_authenticated %}
+                                                <li><a href="{% url 'dashboard' %}"><i class="fas fa-user"></i> Dashboard</a></li>
+                                                
+                                                <li><a href="javascript:{document.getElementById('logout').submit()}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                                
+                                                    <form action="{% url 'logout' %}" method="POST" id="logout">
+                                                            {% csrf_token %}
+                                                            <input type="hidden">
+                                                    </form>
+                                                    {% else %}
+
+                                                <li><a href="{% url 'register' %}"><i class="fas fa-sign-out-alt"></i> Register</a></li>
+                                                
+                                                <li><a href="{% url 'login' %}"><i class="fas fa-sign-out-alt"></i> Login</a></li>
+
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ltn__header-top-area end -->
+        <!-- ltn__header-middle-area start -->
+        <div class="ltn_header-middle-area ltnheader-sticky ltn_sticky-bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="site-logo-wrap">
+                            <div class="site-logo">
+                                <a href="index.html"><img src="{% static 'img/mylogo.png' %}" alt="Logo"></a>
+                            </div>
+                            <div class="get-support clearfix get-support-color-white">
+                                <div class="get-support-icon">
+                                    <i class="icon-call"></i>
+                                </div>
+                                <div class="get-support-info">
+                                    <h6>Get Support</h6>
+                                    <h4><a href="tel:+123456789">123-456-789-10</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col header-menu-column menu-color-white">
+                        <div class="header-menu d-none d-xl-block">
+                            <nav>
+                                <div class="ltn__main-menu">
+                                    <ul>
+                                        <li ><a href="{% url 'home' %}">Home</a>
+                                            
+                                        </li>
+                                        <li ><a href="#">About</a>
+                                            
+                                        </li>
+                                        <li ><a href="{% url 'cars' %}">Cars</a>
+                                            
+                                        </li>
+                                        <li ><a href="{% url 'blog' %}">Blog</a>
+                                            
+                                        </li>
+                                        
+                                      
+                                        <li class="special-link"><a href="appointment.html">GET APPOINTMENT</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <div class="mobile-menu-toggle  menu-btn-white menu-btn-border--- d-xl-none">
+                        <a href="#ltn_utilize-mobile-menu" class="ltn_utilize-toggle">
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ltn__header-middle-area end -->
+    </header>

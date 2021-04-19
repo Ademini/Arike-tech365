@@ -1,0 +1,882 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+<!--{% load static %}-->
+
+{% block content %}
+
+    <div class="ltn__utilize-overlay"></div>
+
+    <!-- SLIDER AREA START (slider-4) -->
+    <div class="ltn_slider-area ltn_slider-4 ">
+        <div class="ltn_slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn_slide-animation-active">
+            <!-- ltn__slide-item -->
+            <div class="ltn_slide-item ltnslide-item-2 ltn_slide-item-4 text-color-white bg-image" data-bg="img/slider/31-bg.png">
+                <div class="ltn__slide-item-inner text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 align-self-center">
+                                <div class="slide-item-info">
+                                    <div class="slide-item-info-inner ltn__slide-animation">
+                                        <h6 class="slide-sub-title ltn__secondary-color animated text-uppercase">//  any kind of car you will get  //</h6>
+                                        <h1 class="slide-title animated ">Professional Car <br>  Service Provide</h1>
+                                        <div class="btn-wrapper animated">
+                                            <a href="service.html" class="theme-btn-1 btn btn-effect-1">OUR SERVICES</a>
+                                            <a href="about.html" class="btn btn-transparent btn-effect-2 white-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ltn__slide-animation">
+                                    <div class="slide-item-img">
+                                        <a href="shop.html"><img src="img/slider/31.png" alt="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER AREA END -->
+
+<!-- CAR DEALER FORM AREA START -->
+<div class="ltn__car-dealer-form-area pt-115 pb-115">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ltn__car-dealer-form-tab">
+                    <div class="ltn__tab-menu  text-uppercase">
+                        <div class="nav">
+                            <a class="active show" data-toggle="tab" href="#ltn__form_tab_1_1"><i class="fas fa-car"></i>Find A Car</a>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
+                            <div class="car-dealer-form-inner">
+                                <form action="#" class="ltn__car-dealer-form-box row">
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-calendar col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Year</option>
+                                            {% for year in year_search %}
+                                            <option>2015</option>
+                                            {% endfor %}
+
+                                          
+                                          
+                                        </select>
+                                    </div>
+
+                                   
+
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-car col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Brand</option>
+                                            {% for brand in brand_search %}
+
+                                            <option>Audi</option>
+                                            {% endfor %}
+                                          
+                                        </select>
+                                    </div>
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-meter col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Model</option>
+                                            {% for model in model_search %}
+                                            <option>Any</option>
+                                            <option>6 Series (1)</option>
+                                            <option>7 Series (1)</option>
+                                            <option>8 Series (1)</option>
+                                            {% endfor %}
+
+                                        </select>
+                                    </div> 
+
+                                          
+
+
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-ring col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Mileage</option>
+                                            {% for Mileage in mileage_search %}
+                                            <option>2019 Toyota Camry (2WD 2.5L)</option>
+
+                                            {% endfor %}
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-transgender col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Transmission</option>
+                                            {% for transmission in transmission_search %}
+                                            <option>1. Manual transmission</option>
+
+                                            {% endfor %}
+                                           
+                                        </select>
+                                    </div>
+
+                                   
+                                    <div class="ltn_car-dealer-form-item ltncustom-icon ltn_icon-cog col-lg-4 col-md-6">
+                                        <select class="nice-select">
+                                            <option>Select Condition</option>
+                                            {% for price in price_search %}
+                                            <option value="{{price}}">{{price}}
+                                            <option>1 - Excellent condition</option>
+
+                                            {% endfor %}
+                                            
+                                        </select>
+                                    </div>
+
+                                  
+                                    <div class="car-price-filter-range col-lg-12">
+                                        <div class="price_filter">
+                                            <div class="price_slider_amount">
+                                                <input type="submit"  value="Your range:"/>
+                                                <input type="text" class="amount" name="price"  placeholder="Add Your Price" />
+                                            </div>
+                                            <div class="slider-range"></div>
+                                        </div>
+                                        <div class="btn-wrapper text-center">
+                                            <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CAR DEALER FORM AREA END -->
+
+
+
+ <!-- FEATURE AREA START ( Feature - 6) -->
+    <div class="ltn__feature-area pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h6 class="section-subtitle ltn__secondary-color">//  features  //</h6>
+                        <h1 class="section-title">Core Features<span>.</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row ltn__custom-gutter">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="ltn_feature-item ltn_feature-item-6">
+                        <div class="ltn__feature-icon">
+                            <span><i class="icon-car-parts"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">All Kind Brand</a></h3>
+                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or incididunt ut labore.</p>
+                            <a class="ltn__service-btn" href="service-details.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="ltn_feature-item ltn_feature-item-6 active">
+                        <div class="ltn__feature-icon">
+                            <span><i class="icon-mechanic"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">Expert Mechanics</a></h3>
+                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or incididunt ut labore.</p>
+                            <a class="ltn__service-btn" href="service-details.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="ltn_feature-item ltn_feature-item-6">
+                        <div class="ltn__feature-icon">
+                            <span><i class="icon-repair"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">Repair Vehicales</a></h3>
+                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or incididunt ut labore.</p>
+                            <a class="ltn__service-btn" href="service-details.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="ltn_feature-item ltn_feature-item-6">
+                        <div class="ltn__feature-icon">
+                            <span><i class="icon-car-parts-9"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">Paint & Costume</a></h3>
+                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or incididunt ut labore.</p>
+                            <a class="ltn__service-btn" href="service-details.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURE AREA END -->
+
+    <!-- CALL TO ACTION START (call-to-action-4) -->
+    <div class="ltn_call-to-action-area ltn_call-to-action-4 bg-image pt-115 pb-120" data-bg="img/bg/6.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-inner call-to-action-inner-4 text-center">
+                        <div class="section-title-area ltn__section-title-2">
+                            <h6 class="section-subtitle ltn__secondary-color">//  any question you have  //</h6>
+                            <h1 class="section-title white-color">897-876-987-90</h1>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="tel:+123456789" class="theme-btn-1 btn btn-effect-1">MAKE A CALL</a>
+                            <a href="contact.html" class="btn btn-transparent btn-effect-4 white-color">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ltn__call-to-4-img-1">
+            <img src="img/bg/12.png" alt="#">
+        </div>
+        <div class="ltn__call-to-4-img-2">
+            <img src="img/bg/11.png" alt="#">
+        </div>
+    </div>
+    <!-- CALL TO ACTION END -->
+
+    <!-- PRODUCT TAB AREA START (product-item-3) -->
+    <div class="ltn_product-tab-area ltn_product-gutter pt-115 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2">
+                        <h6 class="section-subtitle ltn__secondary-color">// Cars</h6>
+                        <h1 class="section-title">Car Best Deals</h1>
+                    </div>
+                    <div class="ltn_tab-menu ltn_tab-menu-top-right text-uppercase">
+                        <div class="nav">
+                            <a class="active show" data-toggle="tab" href="#liton_tab_2_1">New Cars</a>
+                            <a data-toggle="tab" href="#liton_tab_2_2" class="">Old Cars</a>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="liton_tab_2_1">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+
+                                    {% for car in cars %}
+
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="{{car.car_photo1.url}}" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                        <li class="soldout-badge">New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">{{car.title}}</a></h2>
+                                                <div class="product-price">
+                                                    <span>{{car.discounted_price}}</span>
+                                                    <del>{{car.actual_price}}</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>{{ car.year }}
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>{{ car.transmission }}
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>{{ car.mileage }}
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="liton_tab_2_2">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product-2/6.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                        <li class="soldout-badge">New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">Nissan Skyline</a></h2>
+                                                <div class="product-price">
+                                                    <span>$39,000</span>
+                                                    <del>$42,000</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>2019
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>Auto
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>75kph
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product-2/7.png" alt="#"></a>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">Hyundai Tucson</a></h2>
+                                                <div class="product-price">
+                                                    <span>$52,000</span>
+                                                    <del>$55,000</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>2020
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>Auto
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>82kph
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product-2/8.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                        <li class="soldout-badge">Hot</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">Ford Ranger</a></h2>
+                                                <div class="product-price">
+                                                    <span>$59,000</span>
+                                                    <del>$62,000</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>2017
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>Auto
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>92kph
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product-2/9.png" alt="#"></a>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">Volkswagen Polo</a></h2>
+                                                <div class="product-price">
+                                                    <span>$40,000</span>
+                                                    <del>$43,000</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>2018
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>Auto
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>80kph
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ltn__product-item -->
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                        <div class="ltn_product-item ltn_product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product-2/10.png" alt="#"></a>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                <i class="fas fa-shopping-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                <i class="far fa-heart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h2 class="product-title"><a href="product-details.html">Honda Freed</a></h2>
+                                                <div class="product-price">
+                                                    <span>$40,000</span>
+                                                    <del>$43,000</del>
+                                                </div>
+                                                <div class="product-info-brief">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-car"></i>2019
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-cog"></i>Auto
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-road"></i>80kph
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT TAB AREA END -->
+
+     <!-- BANNER AREA START -->
+    <div class="ltn__banner-area pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/1.jpg" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/2.jpg" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER AREA END -->
+
+    <!-- VIDEO AREA START -->
+    <div class="ltn_video-popup-area ltn_video-popup-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn_video-bg-img ltn_video-popup-height-600 bg-overlay-black-10-- bg-image" data-bg="img/bg/15.jpg">
+                        <a class="ltn_video-icon-2 ltn_video-icon-2-border" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO AREA END 01316 008516 -->
+
+    <!-- BRAND LOGO AREA START -->
+    <div class="ltn_brand-logo-area ltn_brand-logo-1 bg-image bg-overlay-theme-black-90 pt-290 pb-110 plr--9" data-bg="img/bg/7.jpg">
+        <div class="container-fluid">
+            <div class="row ltn__brand-logo-active">
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b1.png" alt="Brand Logo">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b2.png" alt="Brand Logo">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b3.png" alt="Brand Logo">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b4.png" alt="Brand Logo">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b5.png" alt="Brand Logo">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn__brand-logo-item">
+                        <img src="img/brand-logo/b3.png" alt="Brand Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BRAND LOGO AREA END -->
+
+    <!-- TESTIMONIAL AREA START (testimonial-3) -->
+    <div class="ltn__testimonial-area bg-image pt-115 pb-70" data-bg="img/bg/8.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2">
+                        <h6 class="section-subtitle ltn__secondary-color">//  Testimonials</h6>
+                        <h1 class="section-title">Clients Feedbacks<span>.</span></h1>
+                    </div>
+                </div>
+            </div>
+        
+ <!-- BLOG AREA START (blog-4) -->
+    <div class="ltn__blog-area pt-85 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h6 class="section-subtitle ltn__secondary-color">// blog & insights</h6>
+                        <h1 class="section-title">News Feeds<span>.</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row  ltn__blog-slider-one-active slick-arrow-1">
+                <div class="col-lg-12">
+                    <div class="ltn_blog-item ltn_blog-item-4 bg-image" data-bg="img/blog/1.jpg">
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-author">
+                                        <a href="#"><i class="far fa-envelope"></i> by: Admin</a>
+                                    </li>
+                                    <li class="ltn__blog-tags">
+                                        <a href="#"><i class="far fa-envelope"></i> Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="ltn__blog-title"><a href="blog-details.html">The branch of biology that deals with the normal.</a></h3>
+                            <p>Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="ltn__blog-meta-btn">
+                                <div class="ltn__blog-meta">
+                                    <ul>
+                                        <li class="ltn__blog-date"><i class="far fa-envelope"></i> June 24, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="ltn__blog-btn">
+                                    <a href="blog-details.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn_blog-item ltn_blog-item-4 bg-image" data-bg="img/blog/2.jpg">
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-author">
+                                        <a href="#"><i class="far fa-envelope"></i> by: Admin</a>
+                                    </li>
+                                    <li class="ltn__blog-tags">
+                                        <a href="#"><i class="far fa-envelope"></i> Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="ltn__blog-title"><a href="blog-details.html">The branch of biology that deals with the normal.</a></h3>
+                            <p>Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="ltn__blog-meta-btn">
+                                <div class="ltn__blog-meta">
+                                    <ul>
+                                        <li class="ltn__blog-date"><i class="far fa-envelope"></i> June 24, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="ltn__blog-btn">
+                                    <a href="blog-details.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn_blog-item ltn_blog-item-4 bg-image" data-bg="img/blog/3.jpg">
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-author">
+                                        <a href="#"><i class="far fa-envelope"></i> by: Admin</a>
+                                    </li>
+                                    <li class="ltn__blog-tags">
+                                        <a href="#"><i class="far fa-envelope"></i> Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="ltn__blog-title"><a href="blog-details.html">The branch of biology that deals with the normal.</a></h3>
+                            <p>Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="ltn__blog-meta-btn">
+                                <div class="ltn__blog-meta">
+                                    <ul>
+                                        <li class="ltn__blog-date"><i class="far fa-envelope"></i> June 24, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="ltn__blog-btn">
+                                    <a href="blog-details.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn_blog-item ltn_blog-item-4 bg-image" data-bg="img/blog/4.jpg">
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-author">
+                                        <a href="#"><i class="far fa-envelope"></i> by: Admin</a>
+                                    </li>
+                                    <li class="ltn__blog-tags">
+                                        <a href="#"><i class="far fa-envelope"></i> Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="ltn__blog-title"><a href="blog-details.html">The branch of biology that deals with the normal.</a></h3>
+                            <p>Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="ltn__blog-meta-btn">
+                                <div class="ltn__blog-meta">
+                                    <ul>
+                                        <li class="ltn__blog-date"><i class="far fa-envelope"></i> June 24, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="ltn__blog-btn">
+                                    <a href="blog-details.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="ltn_blog-item ltn_blog-item-4">
+                        <!-- <div class="ltn__blog-img">
+                            <a href="blog-details.html"><img src="img/blog/21.jpg" alt="#"></a>
+                        </div> -->
+                        <div class="ltn__blog-brief">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-author">
+                                        <a href="#"><i class="far fa-envelope"></i> by: Admin</a>
+                                    </li>
+                                    <li class="ltn__blog-tags">
+                                        <a href="#"><i class="far fa-envelope"></i> Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="ltn__blog-title"><a href="blog-details.html">The branch of biology that deals with the normal.</a></h3>
+                            <p>Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="ltn__blog-meta-btn">
+                                <div class="ltn__blog-meta">
+                                    <ul>
+                                        <li class="ltn__blog-date"><i class="far fa-envelope"></i> June 24, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="ltn__blog-btn">
+                                    <a href="blog-details.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLOG AREA END -->
+
+    <div class="contact-feature-area before-bg-bottom mb--30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ltn__contact-feature-item">
+                        <div class="ltn__contact-feature-icon">
+                            <img src="img/icons/7.png" alt="Icon Image">
+                        </div>
+                        <div class="ltn__contact-feature-info">
+                            <a href="tel:+123456789">
+                                <span class="h6">+123-456-789</span><br>
+                                <span class="h2">Make A Call</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ltn__contact-feature-item">
+                        <div class="ltn__contact-feature-icon">
+                            <img src="img/icons/8.png" alt="Icon Image">
+                        </div>
+                        <div class="ltn__contact-feature-info">
+                            <a href="mailto:info@webmail.com">
+                                <span class="h6">info@webmail.com</span><br>
+                                <span class="h2">Support Mail</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ltn__contact-feature-item">
+                        <div class="ltn__contact-feature-icon">
+                            <img src="img/icons/9.png" alt="Icon Image">
+                        </div>
+                        <div class="ltn__contact-feature-info">
+                            <a href="locations.html">
+                                <span class="h6">12/A, New York, USA</span><br>
+                                <span class="h2">Office Address</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+

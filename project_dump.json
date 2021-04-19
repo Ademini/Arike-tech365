@@ -1,0 +1,279 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$dImNrjaKtTik$bIKURhRY/nssW8wzvYoC8TSBjHiRKU4kAOyfMjkwn4A=",
+        "last_login": "2021-04-01T06:58:44.524Z",
+        "is_superuser": true,
+        "username": "bilkisadeola",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-31T13:30:00.871Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kcra5iowgusbqjt4t4zgu96380j2toi7",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGIlNcuu8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3ERIE6_W6D44LqDdKd6azK2ui5zkLsiD9rl1BI_r4f7d1Col28dFGU7DMQ8Ko2cNaNVGiiBScECmOgCKMRozFllZhjRJW1NRszgrBPvD-Q8N3U:1lRrHw:ujYeU-bi5GvFonsdODYFmY-lUt0vWFm6FAfbK8fhdms",
+        "expire_date": "2021-04-15T06:58:44.551Z"
+    }
+},
+{
+    "model": "automobile.car",
+    "pk": 1,
+    "fields": {
+        "title": "Toyota",
+        "model": "Corrola",
+        "year": 2014,
+        "discounted_price": 1200000,
+        "actual_price": 1500000,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "car_photo1": "photo/2021/04/11/car3_SKUnnj9.jpg",
+        "car_photo2": "photo/2021/04/11/car4_ckJdOCN.jpg",
+        "car_photo3": "photo/2021/04/11/toyotarav_n9IVOPr.png",
+        "car_photo4": "photo/2021/04/11/toyotaplus_3LrewSA.jpg",
+        "mileage": 64000,
+        "brand": "Toyota",
+        "transmission": "Automatic",
+        "created_date": "2021-04-01T07:31:51Z"
+    }
+},
+{
+    "model": "automobile.car",
+    "pk": 2,
+    "fields": {
+        "title": "Honda",
+        "model": "Civic",
+        "year": 2020,
+        "discounted_price": 1700000,
+        "actual_price": 1800000,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "car_photo1": "photo/2021/04/11/car4_BmmzURq.jpg",
+        "car_photo2": "photo/2021/04/11/car3_ZNyN0ga.jpg",
+        "car_photo3": "photo/2021/04/11/toyotaplus.jpg",
+        "car_photo4": "photo/2021/04/11/toyotarav_jbO1o3o.png",
+        "mileage": 37000,
+        "brand": "Honda",
+        "transmission": "Automatic",
+        "created_date": "2021-04-01T07:42:25Z"
+    }
+},
+{
+    "model": "automobile.car",
+    "pk": 3,
+    "fields": {
+        "title": "BMW",
+        "model": "X6",
+        "year": 2010,
+        "discounted_price": 450000,
+        "actual_price": 470000,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "car_photo1": "photo/2021/04/11/car3_PkpQxTV.jpg",
+        "car_photo2": "photo/2021/04/11/car4_Ougs3xF.jpg",
+        "car_photo3": "photo/2021/04/11/car3_PWBb7YC.jpg",
+        "car_photo4": "photo/2021/04/11/toyotarav.png",
+        "mileage": 3200,
+        "brand": "BMW",
+        "transmission": "Manual",
+        "created_date": "2021-04-01T07:45:08Z"
+    }
+},
+{
+    "model": "automobile.car",
+    "pk": 4,
+    "fields": {
+        "title": "Mercedes Benz",
+        "model": "4Matic",
+        "year": 2016,
+        "discounted_price": 230000,
+        "actual_price": 240000,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "car_photo1": "photo/2021/04/11/car3.jpg",
+        "car_photo2": "photo/2021/04/11/car4.jpg",
+        "car_photo3": "photo/2021/04/11/car3_WVrdKqc.jpg",
+        "car_photo4": "photo/2021/04/11/car3_GVIXl9P.jpg",
+        "mileage": 6200,
+        "brand": "Mercedes",
+        "transmission": "Automatic",
+        "created_date": "2021-04-01T07:48:10Z"
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Car Specs",
+        "photo": "photo/2021/04/11/car4_AaQBlpR.jpg",
+        "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "created_date": "2021-04-11T16:15:58Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-04-01T06:42:25.409Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Toyota",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-04-01T06:45:08.365Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Honda",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-04-01T06:48:10.241Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "BMW",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-04-01T06:53:40.655Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Mercedes Benz",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-04-11T15:00:06.911Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Mercedes Benz",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car photo1\", \"Car photo2\", \"Car photo3\", \"Car photo4\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-04-11T15:01:38.627Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "BMW",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car photo1\", \"Car photo2\", \"Car photo3\", \"Car photo4\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-04-11T15:03:41.224Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Honda",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car photo1\", \"Car photo2\", \"Car photo3\", \"Car photo4\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-04-11T15:04:34.394Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "automobile",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Toyota",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car photo1\", \"Car photo2\", \"Car photo3\", \"Car photo4\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-04-11T15:28:12.007Z",
+        "user": [
+            "bilkisadeola"
+        ],
+        "content_type": [
+            "blog",
+            "blog"
+        ],
+        "object_id": "1",
+        "object_repr": "Car Specs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
