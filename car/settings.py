@@ -83,16 +83,18 @@ WSGI_APPLICATION = 'car.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Automobile',
-        'USER': 'postgres',
-        'PASSWORD': 'myposgrade',
-        'HOST': 'localhost',
+# DATABASES = {
+
+    DATABASES = {'default': dj_database_url.config(default='postgres://postgres:password@myposgrade/Automobile_db') }
+    # 'default': {
+    #     # 'ENGINE': 'django.db.backends.postgresql',
+    #     # 'NAME': 'Automobile',
+    #     # 'USER': 'postgres',
+    #     # 'PASSWORD': 'myposgrade',
+    #     # 'HOST': 'localhost',
         
-    }
-}
+#     }
+# }
 
 
 # Password validation
