@@ -16,11 +16,9 @@ protobuf==3.15.5
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
 PyAudio==0.2.11
-pypiwin32==223
 python-decouple==3.4
 pyttsx3==2.90
 pytz==2021.1
-pywin32==300
 requests==2.25.1
 six==1.15.0
 soupsieve==2.1
